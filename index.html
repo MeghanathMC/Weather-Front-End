@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./cloudy.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <div class="date-container">
+          <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+          <div class="date" id="date">Tuesday 14 Nov 2023</div>
+
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Humidity</div>
+              <div>90.2%</div>
+            </div>
+            <div class="weather-item">
+              <div>Pressure</div>
+              <div>150</div>
+            </div>
+            <div class="weather-item">
+              <div>Wind Speed</div>
+              <div>220</div>
+            </div>
+          </div>
+        </div>
+        <div class="place-container" id="place">
+          <div class="time-zone" id="time-zone">
+            <p>New York City</p>
+          </div>
+          <div class="country" id="country">
+            <p>US</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="future-weather">
+      <div class="today" id="current-weather">
+        <div class="day">Monday</div>
+        <img
+          src="https://openweathermap.org/img/wn/10d@2x.png"
+          alt="weather-icon"
+          class="w-icon"
+        />
+        <div class="temp">Day-24&#176;C</div>
+        <div class="temp">Night-12&#176;C</div>
+      </div>
+      <div class="future-weather-forecast" id="future-weather-forecast">
+        <div class="weather-items">
+          <div class="day">Tue</div>
+
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+        <div class="weather-items">
+          <div class="day">Wed</div>
+
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+        <div class="weather-items">
+          <div class="day">Thu</div>
+
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+        <div class="weather-items">
+          <div class="day">Fri</div>
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+        <div class="weather-items">
+          <div class="day">Sat</div>
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+        <div class="weather-items">
+          <div class="day">Sun</div>
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="weather-icon"
+            class="w-icon"
+          />
+
+          <div class="temp">Day-22&#176;C</div>
+          <div class="temp">Night-13&#176;C</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
